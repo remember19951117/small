@@ -1,0 +1,32 @@
+<!--pages/descCat/descCat.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" indicator-color="rgba(255,255,255,0.8) " indicator-active-color="#afb0ad" bindchange="bindchange">
+  <block wx:for="{{imgUrls}}" wx:key="this">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='item-frm'>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">名字</view>
+            <view class="weui-cell__ft">{{cat.name}}</view>
+        </view>
+    </view>
+
+
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">特征</view>
+            <view class="weui-cell__ft">{{cat.desc}}</view>
+        </view>
+    </view>
+</view>
+
+<view class='btn'>
+  <button class='btn-concern'>关注它</button>
+  <button class='btn-find'>找它去</button>
+</view>
+

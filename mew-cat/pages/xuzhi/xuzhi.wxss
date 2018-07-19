@@ -1,0 +1,38 @@
+/* pages/xuzhi/xuzhi.wxss */
+
+.xuzhi{
+  width: 90%;
+  margin: 12px auto;
+ 
+ 
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+text{
+  font-weight: 200;
+  color: #293136;
+}
+.header{
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: #293134;
+}
+.pageOne{
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+   font-weight: 600;
+    color: #293134;
+}
+.title{
+   font-weight: 600;
+  display: block;
+   color: #293134;
+}
+.top{
+  margin-top: 10px;
+}

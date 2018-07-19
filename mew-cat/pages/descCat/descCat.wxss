@@ -1,0 +1,49 @@
+/* pages/descCat/descCat.wxss */
+swiper{
+  width: 684rpx;
+  height: 428rpx;
+  padding: 36rpx;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+  .item-frm .weui-cells:before{
+    top:0;
+    border-top:0rpx solid #d9d9d9
+}
+.item-frm .weui-cells:after{
+    bottom:0;
+    border-bottom:0rpx solid #d9d9d9
+  }  
+
+  .item-frm .weui-cell{
+  align-items:flex-start;
+}
+.item-frm .weui-cell__bd{
+  -webkit-box-flex:0.3;
+  -webkit-flex:0.3;
+  flex: 0.3;
+}
+.item-frm .weui-cell__ft{
+  position: absolute;
+  left: 194rpx;
+  text-align: left;
+}
+
+.btn{
+  width: 682rpx;
+  margin: 58rpx auto;
+}
+.btn button{
+    color: white;
+}
+.btn .btn-concern{
+
+  background: #cd9256;
+  margin-bottom:36rpx; 
+}
+.btn .btn-find{
+    background: #622406;
+}

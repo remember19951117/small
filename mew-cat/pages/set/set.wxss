@@ -1,0 +1,12 @@
+/* pages/set/set.wxss */
+.weui-cell__hd .weui-label{
+  width: 60px;
+}
+.weui-cell__bd .weui-label{
+  width: 160px;
+  
+  color: #7f8389;
+}
+.weui-cell__active{
+  color: #7f8389;
+}

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/xuzhi/xuzhi",
+    "pages/addCat/addCat",
+    "pages/descCat/descCat",
+    "pages/set/set",
+    "pages/time-line/time-line",
+    "pages/post-message/post-message",
+    "pages/ceshi/ceshi",
+    "pages/message/message"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cd9057",
+    "navigationBarTitleText": "喵与猫寻",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "selectedColor": "#cd9057",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "寻找猫",
+        "iconPath": "/images/主页01.png",
+        "selectedIconPath": "/images/主页02.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "铲屎官社区",
+        "iconPath": "/images/爪子01.png",
+        "selectedIconPath": "/images/爪子02.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人",
+        "iconPath": "/images/个人01.png",
+        "selectedIconPath": "/images/个人02.png"
+      }
+    ]
+  }
+}

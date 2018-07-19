@@ -1,0 +1,24 @@
+<!--pages/logs/logs.wxml-->
+<view class='re-men'>
+  <view class='re-header'>
+  
+     <text class='re-body'>热门时间轴</text>
+    <navigator url='../post-message/post-message'>
+      <image src='../../img/add.png' mode='aspectFit' style='width:15px;height:15px; vertical-align: middle'></image>
+      <text style='color:#cd9057;font-size:13px;'>发帖</text>
+    </navigator>
+
+  </view>
+<navigator url='../message/message'>
+  <view class='items-pro' wx:for="{{proList}}">
+    <view class='pro-body'>
+      <view class='pro-title'>
+        <view class='pro-title-cname'>{{item.cname}}</view>
+        <view class='pro-title-time'>{{item.time}}</view>
+        <view class='pro-title-pname'>{{item.pname}}</view>
+      </view>
+      <image src='{{item.img}}'></image>
+    </view>
+  </view>
+</navigator>
+</view>

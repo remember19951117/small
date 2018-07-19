@@ -1,0 +1,62 @@
+<view>
+  <view class='conter'>
+    <view class='message'>
+      <image class='userinfo-avatar' src='{{userInfo.avatarUrl}}' style='width:40px;height:40px;' mode='aspectFit'></image>
+      <view class='nickname'>
+        <text class='userinfo-nickname' style='color:#cd9057;font-size:15px;'>{{userInfo.nickName}} </text>
+        <view class='icon' wx:if="{{userInfo.gender==1}}">
+          <image src='../../img/male.png' class='icon' mode='aspectFit' style='width:20px;height:20px; vertical-align: middle'></image>
+        </view>
+        <view class='icon' wx:if="{{userInfo.gender==0}}">
+          <image class='icon' src='../../img/female.png' mode='aspectFit' style='width:20px;height:20px;'></image>
+        </view>
+      </view>
+      <view class='addMess'>
+
+        <navigator url='../post-message/post-message'>
+          <image src='../../img/add.png' mode='aspectFit' style='width:15px;height:15px; vertical-align: middle'></image>
+          <text style='color:#cd9057;font-size:13px;'>发帖</text>
+        </navigator>
+      </view>
+    </view>
+    <scroll-view scroll-y='true'>
+      <view class='timeline'>
+        <view class='timecontent' wx:for="{{arrData}}" wx:key='key'>
+          <text class='circle'><text class='dispp'></text></text>
+          <view class='conter-two'>
+            <view class='time-time'>{{item.time}} </view>
+            <view class='time-text'>{{item.text}}</view>
+
+            <view class='time-warp'>
+              <view class='time-image'>
+                <image wx:for="{{item.image}}" mode='widthFix' wx:key='id' class='time-img' style="width:{{auto[index].width}}px; height:{{auto[index].height }}px;margin-right:5px;" src='{{item}}' bindload='imageLoad' data-index="{{index}}"></image>
+              </view>
+            </view>
+            <view class='time-footer'>
+              <view>
+                <image src='../../img/xin.png' wx:if="{{collection}}" bindtap='dianzan' data-id='{{item.id}}' mode='aspectFit' class='time-img'></image>
+                <image src='../../img/xin0.png' bindtap='dianzan' wx:else mode='aspectFit' data-id='{{item.id}}' class='time-img'></image>
+                <text>赞</text>
+              </view>
+              <view>
+                <image src='../../img/pinglun.png' mode='aspectFit' class='time-img'></image>
+                <text>评论</text>
+              </view>
+              <view class='share-top'>
+                <image src='../../img/fenxiang.png' mode='aspectFit' class='time-img'></image>
+                <button class='share' open-type="share" bindtap='take' id='{{index}}'>分享</button>
+              </view>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </scroll-view>
+
+
+
+
+  </view>
+
+
+</view>

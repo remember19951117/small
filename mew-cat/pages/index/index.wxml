@@ -1,0 +1,21 @@
+<map id="map" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  scale="18" 
+  controls="{{controls}}" 
+  bindcallouttapr="controltap" 
+  markers="{{markers}}" 
+  circles="{{circles}}" 
+  bindmarkertap="markertap" 
+  polyline="{{polyline}}" 
+  bindregionchange="regionchange" 
+  show-location
+  style="width: 100%; height: {{view.Height}}px;"
+>
+  <cover-view class='btn-fdcat'>
+    <cover-view class='fdcat-title' bindtap='fdcat'>找到猫了</cover-view>
+  </cover-view>
+  <cover-view class='btn' bindtap='to_my_position'>
+    <cover-image class='img' src='/images/定位.png'></cover-image>
+  </cover-view>
+</map>

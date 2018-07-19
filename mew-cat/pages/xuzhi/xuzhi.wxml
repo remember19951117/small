@@ -1,0 +1,23 @@
+<view class='xuzhi'>
+  <scroll-view scroll-y='true' style='height:700px'>
+  <text class='header'>领养须知</text>
+  <text class='pageOne'>接猫篇</text>
+ <view >
+  <text class='title'>健康检查</text>
+  <text>在接一只猫咪回来之前,要先确认下猫咪是否健康，是否做了驱虫</text>
+ </view>
+  <view class='top'>
+    <text  class='title'>选用合适的接猫工具</text>
+    <text>可以选择适当大小的宠物航空箱或者小铁笼（外面罩上透空气的布罩防止猫被陌生环境吓到）。对于
+ 大猫尽量不要用纸箱以防受惊半途逃走。</text>
+    <view class='top'>
+      <text  class='title'>给猫一个安静自由的环境</text>
+      <text>猫咪到家后不要着急去拥抱它或者亲她。有小孩子的佳通尤其要注意，先不要让孩子去逗猫咪，猫咪是出了名的敏感和慢热动物，为了防止猫咪受惊，尽量给它一个时间去熟悉新环境。建议先把小猫放在一个房间里不去打扰他。4.做好保护工作。小猫和小孩子一样，喜欢蹦蹦跳跳，蹭来蹭去。所以收起家中道具，玻璃制品等易碎的东西，一级一切猫不能碰的东西：巧克力、咖啡、百合花、各种药品、各种家庭酸性碱性清洁剂（以防舔食）、樟脑丸、杀虫剂、家具用亮光漆</text>
+    </view>
+    <view class='top'>
+      <text  class='title'>做好封窗</text>
+      <text>有条件的家庭额可以购买铁丝制的纱窗。因为猫咪喜欢看窗外，所以要防止猫咪因为在窗户上玩儿不小心打开窗户掉下去（高层住户）或者溜出去的情况（一楼住户）还有一个小技巧，每次打开窗户的</text>
+    </view>
+  </view>
+  </scroll-view>
+</view>

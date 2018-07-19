@@ -1,0 +1,38 @@
+/**index.wxss**/
+#map .btn{
+  background: white;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  box-shadow: 1rpx 1rpx 10rpx rgba(0, 0, 0, 0.2);
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  position: absolute;
+  bottom:60rpx;
+  right: 40rpx;
+
+}
+
+#map .btn .img{
+  width: 40rpx;
+  height: 40rpx;
+
+}
+#map .btn-fdcat{
+  background: #ce9155;
+  height: 68rpx;
+  width: 220rpx;
+  border-radius: 5rpx;
+  box-shadow: 1rpx 1rpx 2rpx rgba(0, 0, 0, 0.2);
+  margin: 26rpx;
+  text-align: center;
+}
+#map .btn-fdcat .fdcat-title{
+  font-size: 30rpx;
+  color: white;
+  line-height: 68rpx;
+}

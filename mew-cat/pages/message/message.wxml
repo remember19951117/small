@@ -1,0 +1,78 @@
+
+<view class='page'>
+  <view class='page-bottom'>
+    <view class='page-content'>
+      <view class="weui-cells weui-cells_after-title content-body">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">主人</view>
+            <view class="weui-cell__ft">阳叔</view>
+        </view>
+      </view>
+      <view class="weui-cells weui-cells_after-title content-body">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">名字</view>
+            <view class="weui-cell__ft">咖啡猫儿</view>
+        </view>
+      </view>
+      <view class="weui-cells weui-cells_after-title content-body">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">猫品种</view>
+            <view class="weui-cell__ft">咖啡猫儿</view>
+        </view>
+      </view>
+      <view class="weui-cells weui-cells_after-title content-body">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">性别</view>
+            <view class="weui-cell__ft">女</view>
+        </view>
+      </view>
+      <view class="weui-cells weui-cells_after-title content-body">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">特征</view>
+            <view class="weui-cell__ft">像个一年级小学生一样坐着看鸟，摇着尾巴学狗叫</view>
+        </view>
+      </view>
+    </view>
+    <image class='page-img' src='/images/head.jpg'></image>
+  </view>
+
+   <view class="page-top {{open ? 'c-stare1':''}}" bindtouchstart='tap_start' bindtouchmove='tap_drag' bindtouchend='tap_end' bindtap='tap_cl'>  
+      <view class='conter'>
+        <view class='message'>
+          <image class='userinfo-avatar' src='{{userInfo.avatarUrl}}' style='width:40px;height:40px;' mode='aspectFit'></image>
+          <view class='nickname'>
+            <text class='userinfo-nickname' style='color:#cd9057;font-size:15px;'>{{userInfo.nickName}} </text>
+            <view class='icon' wx:if="{{userInfo.gender==1}}">
+              <image src='../../img/male.png' class='icon' mode='aspectFit' style='width:20px;height:20px; vertical-align: middle'></image>
+            </view>
+            <view class='icon' wx:if="{{userInfo.gender==0}}">
+              <image class='icon' src='../../img/female.png' mode='aspectFit' style='width:20px;height:20px;'></image>
+            </view>
+          </view>
+          <view class='addMess'>
+
+            <image src='../../img/add.png' mode='aspectFit' style='width:15px;height:15px; vertical-align: middle'></image>
+            <text style='color:#cd9057;font-size:13px;'>发帖</text>
+          </view>
+        </view>
+        <view class='timeline'>
+          <view class='timecontent' wx:for="{{arrData}}" wx:key='key'>
+            <text class='circle'><text class='dispp'></text></text>
+            <view class='conter-two'>
+              <view class='time-time'>{{item.time}} </view>
+              <view class='time-text'>{{item.text}}</view>
+
+              <view class='time-warp'>
+                <view  class='time-image'>
+                  <image wx:for="{{item.image}}"  wx:key='id' class='time-img' style="width:{{auto[index].width}}px; height:{{auto[index].height }}px;" src='{{item}}' bindload='imageLoad' data-index="{{index}}"></image>
+                </view>
+              </view>
+            </view>
+
+          </view>
+
+
+        </view>
+      </view>
+   </view>
+</view>

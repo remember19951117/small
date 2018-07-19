@@ -1,0 +1,69 @@
+<!--pages/addCat/addCat.wxml-->
+<view class="page">
+  <form bindsubmit="formSubmit">
+    <view class="page__bd">
+      <!-- 图片增加 -->
+      <view class="img-body">
+        <view class="weui-uploader">
+          <view class="weui-uploader__hd">
+            <view class="weui-uploader__title img-title">图片</view>
+            <!-- <view class="weui-uploader__info">{{files.length}}/2</view>  -->
+          </view>
+          <view class="weui-uploader__bd img-add">
+            <view class="weui-uploader__input-box img-add-desc">
+              <view class="weui-uploader__input" bindtap="chooseImage"></view>
+            </view>
+            <view class="weui-uploader__files" id="uploaderFiles">
+              <block wx:for="{{files}}" wx:key="*this">
+                <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                  <image class="weui-uploader__img img-add-desc" src="{{item}}" mode="aspectFill" />
+                </view>
+              </block>
+
+            </view>
+
+          </view>
+        </view>
+      </view>
+
+      <!-- 内容描述 -->
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">名字</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="给它取个名字"  name='input'/>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell" style='align-items:flex-start'>
+          <view class="weui-cell__hd">
+            <view class="weui-label">特征</view>
+          </view>
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="简单形容下它" name="textarea" style="height: 6em" />
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_switch">
+          <view class="weui-cell__bd">关注它</view>
+          <view class="weui-cell__ft">
+            <switch checked />
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells__tips">您将会收到关于它的任何信息</view>
+
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" form-type="submit" bindtap="showTopTips">提交</button>
+      </view>
+    </view>
+
+  </form>
+</view>

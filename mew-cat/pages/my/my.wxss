@@ -1,0 +1,37 @@
+/* pages/my/my.wxss */
+page{
+    background:#F0F0F3;
+}
+.body{
+  background:#F0F0F3;
+  height: 100%;
+  
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #cd9057;
+  height: 400rpx;
+}
+
+.userinfo-avatar {
+  width: 230rpx;
+  height: 230rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #ffffff;
+}
+.userinfo-number {
+  color: #ffffff;
+  margin-top:10px; 
+}
+.list{
+  margin-top: 30rpx;
+}
+.weui-cells weui-cells_after-title{
+  border: none;
+}
